@@ -1,0 +1,13 @@
+Task 1
+Student Class — Data Hiding & Validation
+Problem Statement
+Create a Student class to demonstrate data hiding and validation.
+Class Name: Student
+Private Fields:
+○ name (String)
+○ marks (double)
+Requirements
+● Implement getter and setter methods for both fields.
+● Validation: Marks must be between 0 and 100.
+● Use a Scanner in the main method to allow user input for student name and marks.
+● If an invalid value is entered, print an error message and do not update the field.

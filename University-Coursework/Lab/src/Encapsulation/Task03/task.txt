@@ -1,0 +1,14 @@
+Task 3
+Student Array — Pass/Fail Tracking
+Problem Statement
+Create a system to handle multiple students using an array of objects.
+Class Name: Student
+Private Fields:
+
+○ name (String)
+○ marks (double)
+Requirements
+● Calculate the number of students passed (marks>55).
+● In the main method, create an array to hold 3 Student objects.
+● Use a loop and Scanner to gather data for each student.
+● After input, display the names of students who passed and the total pass count.

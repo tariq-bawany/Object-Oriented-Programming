@@ -1,0 +1,14 @@
+Task 4
+Product Inventory Tracker
+Problem Statement
+Develop an inventory tracker for products using encapsulated fields.
+Class Name: Product
+Private Fields:
+○ name (String)
+○ price (double)
+○ quantity (int)
+Requirements
+● Setters must prevent negative values for price and quantity.
+● Add a method getTotalValue() that returns the product of price and quantity.
+● In main, use a loop to allow the user to input details for 3 products.
+● Output the total inventory value of all products combined.

@@ -1,0 +1,14 @@
+Task 2
+BankAccount Class — Safe Balance Management
+Problem Statement
+Create a BankAccount class to manage a user's balance safely through encapsulated methods.
+Class Name: BankAccount
+Private Fields:
+○ accountHolder (String)
+○ balance (double)
+Requirements
+● The deposit method should only accept positive amounts.
+● The withdraw method must reject negative amounts and amounts greater than the current
+balance.
+● Use Scanner to prompt the user for an initial deposit amount and a withdrawal amount.
+● Display the final balance after transactions.

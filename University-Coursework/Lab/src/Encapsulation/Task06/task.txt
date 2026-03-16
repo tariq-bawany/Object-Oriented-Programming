@@ -1,0 +1,14 @@
+Task 6
+Find Top Student
+Problem Statement
+Create a Student class with encapsulated fields and find the highest-scoring student from a group of
+five.
+Class Name: Student
+Private Fields:
+○ name (String)
+○ marks (double)
+Requirements
+● Take input for 5 students (name and marks).
+● Validate: marks must be between 0 and 100.
+● Find and display the student with the highest marks.
+● Include an isPass() method that returns true if marks >= 50.

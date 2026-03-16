@@ -1,0 +1,15 @@
+Task 5
+Employee Record System — Bonus Calculator
+Problem Statement
+Create an employee record system to calculate bonuses based on experience.
+Class Name: Employee
+Private Fields:
+○ name (String)
+○ salary (double)
+○ yearsOfExperience (int)
+Requirements
+● Add a method calculateBonus():
+● If experience >= 5 years, bonus is 20% of salary.
+● Otherwise, bonus is 10% of salary.
+● Use Scanner to input details for 3 employees into an array.
+● Display a summary showing each employee's name and their calculated bonus.

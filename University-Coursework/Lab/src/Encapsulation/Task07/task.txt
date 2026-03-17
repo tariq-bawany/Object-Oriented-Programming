@@ -1,0 +1,14 @@
+Task 7
+Library Book Search
+Problem Statement
+Create a Book class and implement a search feature that looks up a book by title and returns its details.
+Class Name: Book
+Private Fields:
+○ title (String)
+○ author (String)
+○ price (double)
+Requirements
+● Take input for 3 books (title, author, price).
+● Validate: price must be >= 0.
+● Prompt user to enter a title to search.
+● Display the book's author and price if found, otherwise print 'Book not found.';

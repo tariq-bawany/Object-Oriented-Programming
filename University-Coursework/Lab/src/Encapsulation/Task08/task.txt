@@ -1,0 +1,14 @@
+Task 8
+Menu-Driven Bank System
+Problem Statement
+Extend the BankAccount class with a menu-driven interface that allows multiple transactions in a single
+session.
+Class Name: BankAccount
+Private Fields:
+○ accountHolder (String)
+○ balance (double)
+Requirements
+● Show a menu with options: 1) Deposit 2) Withdraw 3) Check Balance 4) Exit
+● Use a while/do-while loop to allow repeated transactions.
+● Validate all deposits (must be positive) and withdrawals (must not exceed balance).
+● Exit cleanly when option 4 is selected.

@@ -1,0 +1,13 @@
+Task 9
+Car Showroom — Most Expensive
+Problem Statement
+Build a car showroom system that stores multiple car records and identifies the most expensive vehicle.
+Class Name: Car
+Private Fields:
+○ brand (String)
+○ price (double)
+○ year (int)
+Requirements
+● Take input for 3 cars (brand, price, year).
+● Validate: price must be >= 0 and year must be >= 1990.
+● Find and display the most expensive car with its brand, price, and year.

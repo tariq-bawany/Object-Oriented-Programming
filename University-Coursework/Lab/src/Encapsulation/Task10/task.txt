@@ -1,0 +1,15 @@
+Task 10
+Employee Bonus &amp; Experience Filter
+Problem Statement
+Create an Employee system that calculates bonuses based on experience and applies multiple filters to
+generate a summary report.
+Class Name: Employee
+Private Fields:
+○ name (String)
+○ salary (double)
+○ experience (int)
+Requirements
+● Input details for 5 employees (name, salary, experience).
+● calculateBonus(): experience >= 5 years = 20% of salary; otherwise = 10% of salary.
+● Display all employees whose bonus is >= 5000.
+● Display all employees with experience >= 3 years.

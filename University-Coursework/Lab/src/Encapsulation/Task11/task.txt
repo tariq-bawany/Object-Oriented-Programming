@@ -1,0 +1,15 @@
+Task 11
+Update Student Marks
+Problem Statement
+Build a student records system that allows searching for a student by name and updating their marks,
+then displays all records.
+Class Name: Student
+Private Fields:
+○ name (String)
+○ marks (double) — valid range: 0 to 100
+Requirements
+● Take input for 5 students (name and marks).
+● Ask the user to enter a student name to update marks.
+● If the student is found, prompt for new marks and update the record.
+● If not found, display "Student not found."
+● Display all student names and marks after the update.

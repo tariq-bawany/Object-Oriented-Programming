@@ -1,0 +1,15 @@
+Task 12
+Inventory Sort by Price
+Problem Statement
+Create a product inventory system that stores items and sorts them by price in descending order,
+displaying each product's total inventory value.
+Class Name: Product
+Private Fields:
+○ name (String)
+○ price (double) — must be >= 0
+○ quantity (int) — must be >= 0
+Requirements
+● Take input for 5 products (name, price, quantity).
+● Implement getTotalValue() method that returns price x quantity.
+● Sort products by price in descending order using a comparison loop.
+● Display sorted products with name, price, and total value.

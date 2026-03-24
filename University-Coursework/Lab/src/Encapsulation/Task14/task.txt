@@ -1,0 +1,17 @@
+Task 14
+Library Menu System
+Problem Statement
+Build a fully interactive library system with a menu-driven interface that supports borrowing and
+returning books, with real-time copy tracking.
+Class Name: Book
+Private Fields:
+○ title (String)
+○ author (String)
+○ copies (int) — must be >= 0
+Requirements
+● Input details for 3 books (title, author, copies).
+● Present a menu: 1) Show all books 2) Borrow a book 3) Return a book 4) Exit
+● Borrow reduces copies by 1 — cannot go below 0; show an error if no copies remain.
+● Return increases copies by 1.
+● Search by title for borrow/return; display 'Book not found' if title does not match.
+● Loop until the user selects Exit.

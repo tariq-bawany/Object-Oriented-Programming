@@ -1,0 +1,16 @@
+Task 13
+
+Employee Experience Filter
+Problem Statement
+Create an employee management system that applies dual filters to display only qualifying employees
+based on experience and salary thresholds.
+Class Name: Employee
+Private Fields:
+○ name (String)
+○ salary (double) — must be >= 0
+○ experience (int) — must be >= 0
+Requirements
+● Input details for 5 employees (name, salary, experience).
+● Display all employees with experience >= 5 years.
+● Display all employees with salary >= 50,000.
+● Validate all fields: salary and experience must not be negative.

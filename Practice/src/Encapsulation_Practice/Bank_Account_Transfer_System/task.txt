@@ -1,0 +1,11 @@
+Task 1 — Bank Account Transfer System
+Problem Statement
+Build a bank account system where users can transfer money between two accounts and view transaction history.
+Class Name: BankAccount
+Private Fields: accountHolder (String), balance (double) — must be >= 0, accountNumber (String)
+Requirements
+
+Create 2 accounts with input (holder name, account number, initial balance).
+Implement deposit(double amount) and withdraw(double amount) — balance cannot go negative.
+Implement transfer(BankAccount target, double amount) — withdraws from one and deposits to the other.
+After transfer, display both accounts' holder name and balance.

@@ -1,0 +1,69 @@
+Question 2 — The "MediCore" Hospital Patient System
+Semester Practical: Advanced Java Fundamentals & Encapsulation
+Overview
+You have been recruited to build the core engine for MediCore, a next-generation hospital management system. Your goal is to create a robust PatientRecord class that is bulletproof against invalid data, supports legacy file migration, and handles multi-currency billing.
+
+Part 1: The Secure Foundation (Encapsulation)
+Create a class PatientRecord with the following constraints:
+Private Fields: patientID (String), patientName (String), billAmount (double), admissionStatus (String)
+Business Logic:
+
+Bill Integrity: billAmount can never be negative. Any attempt to set it below 0 must be blocked.
+Status Control: admissionStatus cannot have a public setter. It can only be changed via admit() or discharge() methods.
+Safe Billing: A method addCharge(double charge) must verify that charge > 0 before adding it to billAmount.
+
+
+Part 2: The "Smart" Identity (String Manipulation)
+Your system must automatically clean and validate patient data:
+
+Auto-Formatting: When setting patientName, the system must Title Case the name and trim() any leading/trailing spaces.
+ID Validation: Every patientID must follow the strict format: MC-XXXX-2026
+
+Use startsWith("MC-"), endsWith("-2026"), and length() to verify. Total length must be exactly 12 characters.
+Fallout Logic: If the ID is invalid, set the field to "PENDING".
+
+
+
+
+Part 3: Flexible Registration (Constructor Overloading & Chaining)
+Implement three ways to register a patient, using constructor chaining this(...) to avoid code duplication:
+
+Basic: Takes only patientName — generates a random ID and sets billAmount to 0.
+Standard: Takes patientName and an initialBill.
+Data Migrator: Takes a single raw String from a legacy CSV file (e.g., "john doe, 1500.00").
+
+Parse the string and chain it to the main constructor so Title Case logic is applied automatically.
+
+
+
+
+Part 4: Multi-Currency Billing Processor (Method Overloading)
+Implement the processBilling method with three different signatures:
+
+Overload 1 (Standard): processBilling(double amount) — adds the charge in USD directly to billAmount.
+Overload 2 (Currency Shift): processBilling(double amount, String currencyCode)
+
+If PKR: divide amount by 280 to convert to USD, then add to bill.
+If EUR: multiply amount by 1.1 to convert to USD, then add to bill.
+
+
+Overload 3 (Encoded): processBilling(String billingEntry)
+
+Parses a string like "CHG:300". Use .split(":") to extract the value and add it to billAmount.
+
+
+
+
+Part 5: Medical Audit & Analytics
+Finalize the class with reporting and comparison logic:
+
+The Masking Method: Create getPatientSummary() which returns a string with the patient's name masked for privacy (e.g., J*** D**).
+
+Requirement: Use a loop to replace middle characters of each word with asterisks.
+
+
+The Final Logic: Create a static method comparePatients(PatientRecord a, PatientRecord b).
+
+Return the patient with the higher bill, but only if both are "ADMITTED".
+If one is discharged, return the admitted one.
+If both are discharged, return null.

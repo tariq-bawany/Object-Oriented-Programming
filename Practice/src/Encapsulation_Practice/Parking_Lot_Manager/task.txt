@@ -1,0 +1,11 @@
+Task 3 — Parking Lot Manager
+Problem Statement
+Build a parking lot system where vehicles can check in and check out, and the fee is calculated based on hours parked.
+Class Name: Vehicle
+Private Fields: plateNumber (String), ownerName (String), hoursParked (int) — must be >= 0
+Requirements
+
+Input details for 4 vehicles (plate number, owner name, hours parked).
+Implement calculateFee() — first 2 hours cost 50 each, every hour after that costs 30.
+Find and display the vehicle with the highest fee.
+Display all vehicles sorted by fee in ascending order.

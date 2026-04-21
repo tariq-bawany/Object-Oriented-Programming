@@ -1,0 +1,12 @@
+Task 2 — Student Grade Classifier
+Problem Statement
+Build a student system that reads marks for 5 students, calculates their grade, and displays only those who passed.
+Class Name: Student
+Private Fields: name (String), marks (double) — range 0 to 100
+Requirements
+
+Input name and marks for 5 students.
+Implement getGrade() that returns: A (>=85), B (>=70), C (>=55), D (>=40), F (below 40).
+Implement isPassed() that returns true if marks >= 40.
+Display only passing students with their name, marks, and grade.
+At the end, display the count of students who failed.

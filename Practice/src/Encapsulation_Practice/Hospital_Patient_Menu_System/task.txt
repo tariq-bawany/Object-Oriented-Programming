@@ -1,0 +1,13 @@
+Task 4 — Hospital Patient Menu System
+Problem Statement
+Build a hospital system with a menu to admit patients, discharge them, and search for a patient by name.
+Class Name: Patient
+Private Fields: name (String), age (int) — must be > 0, isAdmitted (boolean)
+Requirements
+
+Input details for 4 patients (name, age) — all start as not admitted.
+Present a menu: 1) Show all patients 2) Admit a patient 3) Discharge a patient 4) Search patient by name 5) Exit.
+Admit sets isAdmitted to true — show error if already admitted.
+Discharge sets isAdmitted to false — show error if not admitted.
+Search displays the patient's name, age, and admission status.
+Loop until Exit is selected.

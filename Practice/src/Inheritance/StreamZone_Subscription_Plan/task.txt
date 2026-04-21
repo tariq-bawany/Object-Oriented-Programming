@@ -1,0 +1,35 @@
+Question 1 — The "StreamZone" Subscription Platform
+Overview
+You are building the backend for StreamZone, a video streaming platform. Every user can browse and watch content, but Premium users get enhanced features. The system must track watch history and handle content filtering.
+
+Part 1: The Secure Foundation (Encapsulation)
+
+Create a parent class User with the following:
+Private Fields: userName (String), email (String), watchHistory (String array of size 10), watchCount (int)
+
+Business Logic:
+-) userName must be trimmed and Title Cased when set.
+-) email must contain "@" and "." — if invalid, set to "invalid@email.com".
+-) addToHistory(String title) adds a movie title to watchHistory array. If the array is full (watchCount == 10), print "Watch history full." and do not add.
+
+
+Part 2: Base Class Methods
+
+In the User class, implement:
+
+-) watchMovie(String title) — prints "Playing [title] in 480p. [AD] Ads are playing..." and calls addToHistory(title).
+-) showWatchHistory() — loops through watchHistory and prints each title that is not null. If nothing has been watched, print "No history found."
+searchHistory(String keyword) — loops through watchHistory and prints any title that contains the keyword (use .contains()). If nothing matches, print "No match found."
+
+
+Part 3: Inheritance & Overriding
+Create a child class PremiumUser that extends User:
+Additional Private Field: subscriptionPlan (String) — either "MONTHLY" or "YEARLY". If anything else is passed, set it to "MONTHLY".
+Override: watchMovie(String title) — prints "Playing [title] in 4K. Ad-free experience!" and still calls addToHistory(title).
+New Method: getRenewalMessage() — if plan is "YEARLY", print "Your yearly plan saves you 30%!", otherwise print "Consider upgrading to Yearly for savings!".
+
+Part 4: Multilevel Inheritance
+Create a child class FamilyPremiumUser that extends PremiumUser:
+Additional Private Field: memberCount (int) — must be between 2 and 6. If out of range, set to 2.
+Override: watchMovie(String title) — prints "[Family Plan] Playing [title] in 4K on [memberCount] screens." and still calls addToHistory(title).
+New Method: showPlanDetails() — prints the subscription plan (inherited from PremiumUser via getter) and member count.

@@ -1,0 +1,34 @@
+Question 2 — The "RideNow" Transport System
+Overview
+You are building the backend for RideNow, a ride-hailing platform. Drivers, Premium Drivers, and Fleet Drivers all share core features but behave differently when accepting rides.
+
+Part 1: The Secure Foundation (Encapsulation)
+Create a parent class Driver with:
+Private Fields: driverName (String), licenseNumber (String), earnings (double) — cannot be negative, tripLog (String array of size 8), tripCount (int)
+Business Logic:
+
+driverName must be trimmed and Title Cased when set.
+licenseNumber must start with "LIC-" and have a total length of 10. If invalid, set to "UNVERIFIED".
+addEarnings(double amount) — adds to earnings only if amount > 0.
+logTrip(String destination) — adds destination to tripLog. If full, print "Trip log full.".
+
+
+Part 2: Base Class Methods
+In the Driver class:
+
+acceptRide(String destination) — prints "[driverName] heading to [destination]. Standard fare." and calls logTrip(destination).
+showTripLog() — loops through tripLog and prints all non-null entries. If empty, prints "No trips yet.".
+searchTrip(String keyword) — prints all trips whose destination contains the keyword. If none, prints "No matching trips.".
+
+
+Part 3: Inheritance & Overriding
+Create a child class PremiumDriver that extends Driver:
+Additional Private Field: vehicleClass (String) — must be either "SEDAN" or "SUV". If invalid, set to "SEDAN".
+Override: acceptRide(String destination) — prints "[driverName] heading to [destination] in a [vehicleClass]. Premium fare applied." and calls logTrip(destination).
+New Method: getVehicleInfo() — prints "Vehicle Class: [vehicleClass]".
+
+Part 4: Multilevel Inheritance
+Create a child class FleetDriver that extends PremiumDriver:
+Additional Private Field: fleetID (String) — must start with "FLT-". If invalid, set to "FLT-000".
+Override: acceptRide(String destination) — prints "[FleetID] Fleet vehicle dispatched to [destination]." and calls logTrip(destination).
+New Method: showFleetSummary() — prints the fleetID, total trips taken (tripCount), and total earnings.
